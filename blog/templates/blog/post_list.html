@@ -5,8 +5,18 @@
     <title>a tomar por culo el personal</title>
 </head>
 <body>
-    <p>a tomar</p>
-    <p>por culo</p>
-    <p>el personal</p>
+    <div>
+        <h1><a href="/"> a tomar</a></h1>
+        <h1><a href="/">por culo</a></h1>
+        <h1><a href="/">el personal</a></h1>
+    </div>
+    {% for post in posts %}
+        <div>
+            <p>published: {{ post.published_date }}</p>
+            <h1><a href="">{{ post.title }}</a> </h1>
+            <p>{{post.text|linebreaksbr }}</p>
+        </div>
+        {{ post }}
+    {% endfor %}
 </body>
 </html>
