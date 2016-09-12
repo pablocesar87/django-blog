@@ -34,7 +34,7 @@
     }
 
    .body {
-    background-image: url('/static/images/forest.jpg');
+    background-color: green;
     background-repeat: no-repeat;
     background-size: 100%;
    }
